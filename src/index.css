@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600&family=Lato:wght@400;700&family=Roboto:wght@100;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.6rem;
+  font-family: "Roboto", "Lato", sans-serif;
+  position: relative;
+}
+
+:root {
+  --primary_Clr: #34b96f;
+  --primary_Clr1: #f7b614;
+  --Secondary_Clr: #fb6c90;
+  --text_Clr: #000;
+}

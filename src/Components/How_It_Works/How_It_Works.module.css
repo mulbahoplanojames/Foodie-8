@@ -1,0 +1,34 @@
+.how_it_works {
+  padding: 3% 2%;
+  text-align: center;
+}
+.key {
+  color: var(--primary_Clr);
+  padding-bottom: 2%;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 430;
+  padding-bottom: 2%;
+}
+
+.description {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  line-height: 1.7rem;
+  padding-bottom: 5%;
+}
+
+.work_steps_wripper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.icon {
+  font-size: 5.3rem;
+  color: #34b96f;
+}
