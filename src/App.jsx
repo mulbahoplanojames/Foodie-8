@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "/src/Layouts/Navbar/Navbar.jsx";
-import Home from "../src/Pages/Home";
 import Swal from "sweetalert2";
 import { useEffect } from "react";
+import Home from "../src/Pages/Home";
+import Navbar from "/src/Layouts/Navbar/Navbar.jsx";
+import Footer from "./Layouts/Footer/Footer";
 // import About from "../src/Pages/About";
 // import Menu from "../src/Pages/Menu";
 // import Order from "../src/Pages/Order";
@@ -26,6 +27,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
