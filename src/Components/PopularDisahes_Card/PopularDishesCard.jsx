@@ -5,6 +5,7 @@ import {
   FaCartPlus,
   FaStarHalfAlt,
   FaDollarSign,
+  FaHeart,
 } from "react-icons/fa";
 
 const PopularDishesCard = (props) => {
@@ -28,7 +29,7 @@ const PopularDishesCard = (props) => {
             <span className={Classes.rate}>{rating}</span>
           </p>
           <div className={Classes.cart_wripper}>
-            <FaCartPlus className={Classes.cart} onClick={() => {}} />
+            <FaHeart className={Classes.cart} onClick={() => {}} />
           </div>
         </div>
         <h1></h1>

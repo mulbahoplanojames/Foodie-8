@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import Home from "../src/Pages/Home";
 import Navbar from "/src/Layouts/Navbar/Navbar.jsx";
 import Footer from "./Layouts/Footer/Footer";
+import Menu from "../src/Pages/Menu";
 // import About from "../src/Pages/About";
-// import Menu from "../src/Pages/Menu";
 // import Order from "../src/Pages/Order";
 // import Contact from "../src/Pages/Contact";
 // import Join_Us from "../src/Pages/JoinUs";
@@ -26,6 +26,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/:menu" element={<Menu />} />
         </Routes>
         <Footer />
       </BrowserRouter>

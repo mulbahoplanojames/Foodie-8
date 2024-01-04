@@ -1,11 +1,11 @@
 import { createContext, useState } from "react";
-import popular_dishes from "../Data/Popular_dishes";
+import all_product from "../Data/All_Product";
 
 export const ShopContext = createContext(null);
 
 const getDefaultCard = () => {
   let cart = {};
-  for (let i = 0; i < popular_dishes.length + 1; i++) {
+  for (let i = 0; i < all_product.length + 1; i++) {
     cart[i] = 0;
   }
   return cart;
@@ -36,7 +36,7 @@ const ShopContextProvider = (props) => {
 
   const contextValue = {
     getTotalCartItem,
-    popular_dishes,
+    all_product,
     cardItems,
     addToCart,
     removeFromCart,
