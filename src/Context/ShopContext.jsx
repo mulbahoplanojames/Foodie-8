@@ -35,11 +35,11 @@ const ShopContextProvider = (props) => {
   };
 
   const contextValue = {
-    getTotalCartItem,
+    // getTotalCartItem,
     all_product,
-    cardItems,
-    addToCart,
-    removeFromCart,
+    // cardItems,
+    // addToCart,
+    // removeFromCart,
   };
   // console.log(cardItems);
 

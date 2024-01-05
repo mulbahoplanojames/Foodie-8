@@ -6,10 +6,15 @@ import Navbar from "/src/Layouts/Navbar/Navbar.jsx";
 import Footer from "./Layouts/Footer/Footer";
 import Menu from "../src/Pages/Menu";
 // import About from "../src/Pages/About";
-// import Order from "../src/Pages/Order";
 // import Contact from "../src/Pages/Contact";
 // import Join_Us from "../src/Pages/JoinUs";
 // import Cart from "../src/Pages/Cart";
+// Products Components
+import Burger from "./Components/Products/Burger/Burger";
+import Pizza from "./Components/Products/Pizza/Pizza";
+import Coffee from "./Components/Products/Coffee/Coffee";
+import Chicken from "./Components/Products/Chicken/Chicken";
+import Fruits from "./Components/Products/Fruits/Fruits";
 
 const App = () => {
   useEffect(() => {
@@ -27,6 +32,11 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:menu" element={<Menu />} />
+          <Route path="/burger" element={<Burger category={"Burger"} />} />
+          <Route path="/pizza" element={<Pizza category={"Pizza"} />} />
+          <Route path="/chicken" element={<Chicken category={"Chicken"} />} />
+          <Route path="/coffee" element={<Coffee category={"Coffee"} />} />
+          <Route path="/fruits" element={<Fruits category={"Fruits"} />} />
         </Routes>
         <Footer />
       </BrowserRouter>

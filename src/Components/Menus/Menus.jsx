@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import Classes from "/src/Components/Menus_Card/MenusCard.module.css";
 import MenuCard from "../Menus_Card/MenuCard";
 import all_product from "../../Data/All_Product";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../../Context/ShopContext";
+import ProductLinks from "../Product_Links/ProductLinks";
 
 const Menu = styled.div({
   padding: "5% 2%",
@@ -24,13 +26,6 @@ const Title = styled.h1({
   color: "#222222",
 });
 
-const MenuLinksWripper = styled.div({
-  textAlign: "center",
-  paddingBottom: "6%",
-  display: "flex",
-  justifyContent: "center",
-});
-
 const AllProductsWripper = styled.div({
   display: "flex",
   justifyContent: "center",
@@ -40,6 +35,8 @@ const AllProductsWripper = styled.div({
 });
 
 const Menus = () => {
+  const { all_product } = useContext(ShopContext);
+
   return (
     <>
       <Menu>
@@ -48,30 +45,7 @@ const Menus = () => {
           Choose your favoriate food <br /> & order now !
         </Title>
 
-        <MenuLinksWripper>
-          <Link
-            to=""
-            className={Classes.link}
-            onClick={() => {
-              all_product.filter((products) => products.category !== "Burger");
-              console.log("CLick");
-            }}
-          >
-            Burger
-          </Link>
-          <Link to="" className={Classes.link}>
-            Pizza
-          </Link>
-          <Link to="" className={Classes.link}>
-            Chicken
-          </Link>
-          <Link to="" className={Classes.link}>
-            Coffee
-          </Link>
-          <Link to="" className={Classes.link}>
-            Fruits
-          </Link>
-        </MenuLinksWripper>
+        <ProductLinks />
 
         <AllProductsWripper>
           {all_product.map((product, i) => {
@@ -88,8 +62,6 @@ const Menus = () => {
               />
             );
           })}
-
-          
         </AllProductsWripper>
       </Menu>
     </>

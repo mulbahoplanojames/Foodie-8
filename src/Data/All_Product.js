@@ -300,7 +300,7 @@ const all_product = [
     price: 7.18,
     rating: "4.8",
     image: Fruit3,
-    category: "",
+    category: "Fruits",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },

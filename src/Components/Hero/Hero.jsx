@@ -19,12 +19,8 @@ const Hero = () => {
               You can order here easy and <br /> simple.
             </p>
             <div className="btn_wripper">
-              <Link to="/">
-                <Order_Button />
-              </Link>
-              <Link to="/">
-                <MoreMenuButton />
-              </Link>
+              <Order_Button />
+              <MoreMenuButton />
             </div>
           </div>
           <div className={`${Classes.hero_content} ${Classes.hero_content2}`}>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const MoreMenu = styled.button`
@@ -20,7 +21,9 @@ const MoreMenu = styled.button`
 const MoreMenuButton = () => {
   return (
     <>
-      <MoreMenu>More Menu</MoreMenu>
+      <Link to="/:menu">
+        <MoreMenu>More Menu</MoreMenu>
+      </Link>
     </>
   );
 };
