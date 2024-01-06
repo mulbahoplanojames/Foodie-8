@@ -1,0 +1,28 @@
+.aboutUs_content_wripper {
+  width: 600px;
+  padding: 2% 1.5%;
+}
+
+.content1 {
+  width: 450px;
+  height: 70vh;
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  padding-bottom: 4%;
+  text-transform: capitalize;
+  font-size: 2.4rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}

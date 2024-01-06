@@ -16,7 +16,7 @@ const TestimonialMain = styled.div({
 
 const Title = styled.h1({
   textAlign: "center",
-  paddingBottom: "4%",
+  paddingBottom: "1.4%",
   textTransform: "capitalize",
 });
 
