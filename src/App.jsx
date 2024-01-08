@@ -6,7 +6,7 @@ import Navbar from "/src/Layouts/Navbar/Navbar.jsx";
 import Footer from "./Layouts/Footer/Footer";
 import Menu from "../src/Pages/Menu";
 import About from "../src/Pages/About";
-// import Contact from "../src/Pages/Contact";
+import Contact from "../src/Pages/Contact";
 // import Join_Us from "../src/Pages/JoinUs";
 // import Cart from "../src/Pages/Cart";
 // Products Components
@@ -33,6 +33,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/:menu" element={<Menu />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/burger" element={<Burger category={"Burger"} />} />
           <Route path="/pizza" element={<Pizza category={"Pizza"} />} />
           <Route path="/chicken" element={<Chicken category={"Chicken"} />} />
