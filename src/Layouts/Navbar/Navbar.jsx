@@ -51,7 +51,9 @@ const Navbar = () => {
         </div>
 
         <div className={Classes.icon_btn_wripper}>
-          <Nav_button />
+          <Link to="/joinUs">
+            <Nav_button />
+          </Link>
           <div className={Classes.icon_wripper}>
             <FaCartArrowDown className={Classes.icon} />
             <div className={Classes.cart_count}>0</div>

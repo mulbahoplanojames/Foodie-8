@@ -7,7 +7,11 @@ import Footer from "./Layouts/Footer/Footer";
 import Menu from "../src/Pages/Menu";
 import About from "../src/Pages/About";
 import Contact from "../src/Pages/Contact";
-// import Join_Us from "../src/Pages/JoinUs";
+import Join_Us from "../src/Pages/JoinUs";
+
+//Login and SignUp Pages
+import SignUp from "/src/Components/SIngUp/SignUp.jsx";
+import LogIn from "/src/Components/Login/Login.jsx";
 // import Cart from "../src/Pages/Cart";
 // Products Components
 import Burger from "./Components/Products/Burger/Burger";
@@ -34,13 +38,16 @@ const App = () => {
           <Route path="/:menu" element={<Menu />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/joinUs" element={<Join_Us />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/logIn" element={<LogIn />} />
           <Route path="/burger" element={<Burger category={"Burger"} />} />
           <Route path="/pizza" element={<Pizza category={"Pizza"} />} />
           <Route path="/chicken" element={<Chicken category={"Chicken"} />} />
           <Route path="/coffee" element={<Coffee category={"Coffee"} />} />
           <Route path="/fruits" element={<Fruits category={"Fruits"} />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );

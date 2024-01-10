@@ -4,7 +4,7 @@ import Classes from "/src/Components/About_Us/ABoutUs.module.css";
 import image from "/src/assets/Images/Burgers/burger2.webp";
 
 const About = styled.div({
-  padding: "3% 1.5%",
+  padding: "6% 1.5%",
 });
 
 const AboutUsWripper = styled.div({
