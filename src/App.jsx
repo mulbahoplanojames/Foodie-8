@@ -33,6 +33,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Navbar />
+
         <Routes>
           <Route path="/" element={<Join_Us />} />
           <Route path="/home" element={<Home />} />

@@ -38,7 +38,7 @@ const Title = styled.h1({
 });
 
 const ButtonWripper = styled.div({
-  margin: "5px 0px 3rem 0px",
+  margin: "5px 0px 2rem 0px",
 });
 
 const Skip = {
@@ -66,7 +66,7 @@ const AccountOption = () => {
             </Link>
           </ButtonWripper>
 
-          <Link to="/" style={Skip}>
+          <Link to="/home" style={Skip}>
             Skip for now
           </Link>
         </OptionWripper>

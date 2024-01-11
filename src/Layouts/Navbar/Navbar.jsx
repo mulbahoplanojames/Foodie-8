@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
 
         <div className={Classes.icon_btn_wripper}>
-          <Link to="/joinUs">
+          <Link to="/">
             <Nav_button />
           </Link>
           <div className={Classes.icon_wripper}>

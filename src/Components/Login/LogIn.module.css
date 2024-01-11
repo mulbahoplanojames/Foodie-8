@@ -1,0 +1,64 @@
+.label {
+  font-size: 1.2rem;
+  padding-bottom: 0.4rem;
+  display: inline-block;
+}
+
+.input {
+  width: 100%;
+  height: 6vh;
+  font-size: 1rem;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 1.6rem;
+  padding-left: 10px;
+}
+
+.option {
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 1.4rem;
+  font-size: 1.2rem;
+}
+
+.icon_wripper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 2rem;
+}
+
+.icon_content {
+  width: 35px;
+  height: 35px;
+  background: #34b96f;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.3rem;
+  transition: 0.5s ease-in;
+}
+
+.icon_content:hover {
+  background: transparent;
+  border: 2px solid #34b96f;
+  color: #34b96f;
+}
+
+.singUp_option {
+  text-align: center;
+}
+
+span {
+  padding-left: 5px;
+  font-weight: 600;
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
