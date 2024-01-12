@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Swal from "sweetalert2";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Home from "../src/Pages/Home";
 import Navbar from "/src/Layouts/Navbar/Navbar.jsx";
 import Footer from "./Layouts/Footer/Footer";
@@ -33,7 +33,6 @@ const App = () => {
     <>
       <BrowserRouter>
         <Navbar />
-
         <Routes>
           <Route path="/" element={<Join_Us />} />
           <Route path="/home" element={<Home />} />

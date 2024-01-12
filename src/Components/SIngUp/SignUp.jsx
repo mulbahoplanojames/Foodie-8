@@ -79,7 +79,7 @@ const SignUp = () => {
                 type="email"
                 className={Classes.input}
                 value={email}
-                onChange={(e) => setEmail(e.target.value())}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
@@ -89,7 +89,7 @@ const SignUp = () => {
                 Phone
               </label>
               <input
-                type="phone"
+                type="tel"
                 className={Classes.input}
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
