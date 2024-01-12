@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Classes from "/src/Components/Login/LogIn.module.css";
 import styled from "styled-components";
 import SignUpButton from "../../Interface/SignUp_Button/SignUpButton";
@@ -35,6 +35,19 @@ const ButtonWripper = styled.div({
 });
 
 const SignUp = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setName("");
+    setEmail("");
+    setPhone("");
+    setPassword("");
+  };
+
   return (
     <>
       <Wripper>
@@ -44,39 +57,63 @@ const SignUp = () => {
             Register your account and join our community!
           </Description>
 
-          <form action="">
+          <form action="" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name" className={Classes.label}>
                 Name
               </label>
-              <input type="text" className={Classes.input} />
+              <input
+                type="text"
+                className={Classes.input}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+              />
             </div>
 
             <div>
               <label htmlFor="email" className={Classes.label}>
                 Email
               </label>
-              <input type="email" className={Classes.input} />
+              <input
+                type="email"
+                className={Classes.input}
+                value={email}
+                onChange={(e) => setEmail(e.target.value())}
+                required
+              />
             </div>
 
             <div>
               <label htmlFor="phone" className={Classes.label}>
                 Phone
               </label>
-              <input type="phone" className={Classes.input} />
+              <input
+                type="phone"
+                className={Classes.input}
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                required
+              />
             </div>
 
             <div>
               <label htmlFor="password" className={Classes.label}>
                 Password
               </label>
-              <input type="password" className={Classes.input} />
+              <input
+                type="password"
+                className={Classes.input}
+                value={password}
+                onChange={(e) => setPassword(e.target.password)}
+                required
+              />
             </div>
-          </form>
 
-          <ButtonWripper>
-            <SignUpButton />
-          </ButtonWripper>
+            <ButtonWripper>
+              <SignUpButton />
+            </ButtonWripper>
+          </form>
 
           <p className={Classes.option}>Or sign Up using </p>
 
