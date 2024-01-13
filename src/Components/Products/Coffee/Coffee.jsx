@@ -32,7 +32,7 @@ const Coffee = (props) => {
             return (
               <MenuCard
                 key={i}
-                Id={item.Id}
+                Id={item.id}
                 name={item.name}
                 price={item.price}
                 rating={item.rating}

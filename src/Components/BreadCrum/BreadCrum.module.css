@@ -1,0 +1,12 @@
+.breadcrum {
+  display: flex;
+  align-items: center;
+  padding: 3% 0px 0px 5%;
+  gap: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}

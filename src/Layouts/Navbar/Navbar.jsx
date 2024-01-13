@@ -2,9 +2,13 @@ import Classes from "/src/Layouts/Navbar/Navbar.module.css";
 import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Nav_button from "../../Interface/Nav_Button/Nav_button";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { ShopContext } from "../../Context/ShopContext";
 
 const Navbar = () => {
+  // Updating the card item
+  const { getTotalCartItem } = useContext(ShopContext);
+
   // Navbar Color CHange
   const [navColor, setNavColor] = useState(false);
 
@@ -55,8 +59,10 @@ const Navbar = () => {
             <Nav_button />
           </Link>
           <div className={Classes.icon_wripper}>
-            <FaCartArrowDown className={Classes.icon} />
-            <div className={Classes.cart_count}>0</div>
+            <Link to="/cart">
+              <FaCartArrowDown className={Classes.icon} />
+            </Link>
+            <div className={Classes.cart_count}>{getTotalCartItem()}</div>
           </div>
         </div>
       </nav>

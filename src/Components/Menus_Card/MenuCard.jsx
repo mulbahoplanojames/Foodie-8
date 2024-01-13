@@ -1,15 +1,18 @@
 import React from "react";
 import Classes from "/src/Components/Menus_Card/MenusCard.module.css";
-import { FaCartPlus, FaDollarSign, FaStar } from "react-icons/fa";
+import { FaHeart, FaDollarSign, FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const MenuCard = (props) => {
-  const { name, price, image, rating, description } = props;
+  const { name, price, image, rating, description, Id } = props;
 
   return (
     <>
       <div className={Classes.menu_card_wripper}>
         <div className={Classes.image_wripper}>
-          <img src={image} alt="Product Images" className={Classes.image} />
+          <Link to={`/product/${Id}`}>
+            <img src={image} alt="Product Images" className={Classes.image} />
+          </Link>
         </div>
         <div className={Classes.body}>
           <h2 className={Classes.title}>{name}</h2>
@@ -22,7 +25,7 @@ const MenuCard = (props) => {
             <FaStar className={Classes.star_icon} /> <span>{rating}</span>
           </p>
           <div className={Classes.cart_wripper}>
-            <FaCartPlus className={Classes.cart_icon} />
+            <FaHeart className={Classes.cart_icon} />
           </div>
         </div>
       </div>

@@ -61,8 +61,8 @@
 }
 
 .cart_wripper {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border-radius: 50px;
   background: #000;
   position: absolute;
@@ -75,8 +75,8 @@
 }
 
 .cart_icon {
-  color: #ffff;
-  font-size: 1.4rem;
+  color: #34b96f;
+  font-size: 1rem;
 }
 
 .link {
@@ -95,7 +95,6 @@
   display: block;
   margin-top: 3%;
   transition: 0.3s ease-in;
- 
 }
 
 .link:hover::after {

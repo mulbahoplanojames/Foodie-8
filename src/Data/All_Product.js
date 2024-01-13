@@ -35,7 +35,7 @@ import Fruit6 from "/src/assets/Images/Fruits/fruit6.jpg";
 
 const all_product = [
   {
-    productId: 1,
+    id: 1,
     name: "Cheese Burger",
     price: 24.18,
     rating: "4.8",
@@ -45,7 +45,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ips amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 2,
+    id: 2,
     name: "Mushroom Swiss burger",
     price: 24.23,
     rating: "4.4",
@@ -55,7 +55,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ips amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 3,
+    id: 3,
     name: "Slugburger",
     price: 22.17,
     rating: "4.7",
@@ -65,7 +65,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 4,
+    id: 4,
     name: "Cheese Burger",
     price: 20.18,
     rating: "4.8",
@@ -75,7 +75,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 5,
+    id: 5,
     name: "Coconut burger",
     price: 23.18,
     rating: "4.4",
@@ -85,7 +85,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 6,
+    id: 6,
     name: "Chicken burger",
     price: 19.18,
     rating: "4.3",
@@ -95,7 +95,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsaamet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 7,
+    id: 7,
     name: "Detroit Pizza",
     price: 22.18,
     rating: "4.8",
@@ -105,7 +105,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsaamet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 8,
+    id: 8,
     name: "Cheese Pizza",
     price: 24.18,
     rating: "4.8",
@@ -115,7 +115,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 9,
+    id: 9,
     name: "Veggie Pizza.",
     price: 24.18,
     rating: "4.8",
@@ -125,7 +125,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsaamet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 10,
+    id: 10,
     name: "Cheese Pizza",
     price: 24.18,
     rating: "4.8",
@@ -135,7 +135,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 11,
+    id: 11,
     name: "Meat Pizza ",
     price: 24.18,
     rating: "4.8",
@@ -145,7 +145,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ips amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 12,
+    id: 12,
     name: "Margherita Pizza ",
     price: 24.18,
     rating: "4.8",
@@ -155,7 +155,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsaamet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 13,
+    id: 13,
     name: "Black Coffee",
     price: 17.32,
     rating: "4.8",
@@ -165,7 +165,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsaamet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 14,
+    id: 14,
     name: "Cappuccino Coffee",
     price: 18.18,
     rating: "4.8",
@@ -175,7 +175,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 15,
+    id: 15,
     name: "Latte Coffee",
     price: 14.18,
     rating: "4.8",
@@ -185,7 +185,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 16,
+    id: 16,
     name: "Espresso. Coffee",
     price: 10.13,
     rating: "4.9",
@@ -195,7 +195,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 17,
+    id: 17,
     name: " lungo Coffee",
     price: 11.1,
     rating: "4.6",
@@ -205,7 +205,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 18,
+    id: 18,
     name: "Doppio Coffee",
     price: 13.18,
     rating: "4.8",
@@ -215,7 +215,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 19,
+    id: 19,
     name: "Bake Chicken",
     price: 24.18,
     rating: "4.8",
@@ -225,7 +225,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 20,
+    id: 20,
     name: "Fry Chicken",
     price: 23.18,
     rating: "4.8",
@@ -235,7 +235,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 21,
+    id: 21,
     name: "Source Chicken",
     price: 28.18,
     rating: "4.8",
@@ -245,7 +245,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 22,
+    id: 22,
     name: "Sesson Chicken",
     price: 21.18,
     rating: "4.8",
@@ -255,7 +255,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 23,
+    id: 23,
     name: "Bake Chicken",
     price: 23.18,
     rating: "4.8",
@@ -265,7 +265,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 24,
+    id: 24,
     name: "Creamy Chicken",
     price: 19.18,
     rating: "4.8",
@@ -275,7 +275,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 25,
+    id: 25,
     name: " Blueberry",
     price: 9.18,
     rating: "4.8",
@@ -285,7 +285,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 26,
+    id: 26,
     name: " Graps",
     price: 6.18,
     rating: "4.8",
@@ -295,7 +295,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 27,
+    id: 27,
     name: "Avocado",
     price: 7.18,
     rating: "4.8",
@@ -305,7 +305,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 28,
+    id: 28,
     name: "Banana",
     price: 8.18,
     rating: "4.8",
@@ -315,7 +315,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 29,
+    id: 29,
     name: "Mango",
     price: 15.18,
     rating: "4.8",
@@ -325,7 +325,7 @@ const all_product = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsa amet aliquid odio expedita, modi labore!",
   },
   {
-    productId: 30,
+    id: 30,
     name: "Cherry",
     price: 14.58,
     rating: "4.8",
