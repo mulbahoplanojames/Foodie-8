@@ -76,8 +76,13 @@
   padding-bottom: 5%;
 }
 
+.price {
+  font-size: 1.3rem;
+}
+
 .description {
   padding-right: 10rem;
+  font-size: 1.1rem;
 }
 
 .rating_wripper {
@@ -112,4 +117,5 @@
 
 .category {
   padding-bottom: 10%;
+  font-size: 1.1rem;
 }

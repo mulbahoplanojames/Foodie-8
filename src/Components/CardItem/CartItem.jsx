@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Classes from "/src/Components/CardItem/CartItem.module.css";
 import { ShopContext } from "../../Context/ShopContext";
 import { MdOutlineCancelPresentation } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const CartItem = () => {
   const { all_product, cardItems, removeFromCart, getTotalCartAmount } =
@@ -61,9 +62,11 @@ const CartItem = () => {
                 <h3>Total</h3>
                 <h3>${getTotalCartAmount()}</h3>
               </div>
-              <button className={Classes.checkout_btn}>
-                Proceed to checkout
-              </button>
+              <Link to="">
+                <button className={Classes.checkout_btn}>
+                  Proceed to checkout
+                </button>
+              </Link>
             </div>
           </div>
 
