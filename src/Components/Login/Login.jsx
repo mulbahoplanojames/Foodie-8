@@ -4,6 +4,7 @@ import Classes from "/src/Components/Login/LogIn.module.css";
 import LoginButton from "../../Interface/LogIn_Button/LoginButton";
 import { FaGoogle, FaFacebookF, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Wripper = styled.div({
   display: "flex",
@@ -42,6 +43,14 @@ const Login = () => {
     e.preventDefault();
     setEmail("");
     setPassword("");
+
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Your Log in was successful, Welcome back",
+      showConfirmButton: false,
+      timer: 3000,
+    });
   };
 
   return (
