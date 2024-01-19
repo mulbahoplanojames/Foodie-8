@@ -1,4 +1,5 @@
 // Styles are in the Popular_Dishes/PopularDishes.module.css
+import { Link } from "react-router-dom";
 import Classes from "/src/Components/Popular_Dishes/PopularDishes.module.css";
 import {
   FaStar,
@@ -15,7 +16,10 @@ const PopularDishesCard = (props) => {
     <>
       <div className={Classes.popular_dishes_card_wripper}>
         <div className={Classes.head}>
-          <img src={image} alt="Images" className={Classes.image} />
+          <Link to="/:menu">
+            {" "}
+            <img src={image} alt="Images" className={Classes.image} />
+          </Link>
         </div>
         <div className={Classes.body}>
           <h2 className={Classes.product_name}>{name}</h2>
