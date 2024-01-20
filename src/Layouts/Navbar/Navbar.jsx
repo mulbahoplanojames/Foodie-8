@@ -33,9 +33,11 @@ const Navbar = () => {
     <>
       <nav className={`${navColor ? Classes.nav1 : Classes.nav}`}>
         <div className={Classes.logo_wripper}>
-          <h1 className={Classes.logo}>
-            Foodie<span>!8</span>
-          </h1>
+          <Link to="/home" style={{ textDecoration: "none" }}>
+            <h1 className={Classes.logo}>
+              Foodie<span>!8</span>
+            </h1>
+          </Link>
         </div>
 
         <div className={Classes.nav_menu}>
