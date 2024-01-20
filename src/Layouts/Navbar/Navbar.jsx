@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Nav_button from "../../Interface/Nav_Button/Nav_button";
 import { useState, useEffect, useContext } from "react";
 import { ShopContext } from "../../Context/ShopContext";
+import navLinks from "../../Components/Constants/Constant";
 
 const Navbar = () => {
   // Updating the card item
@@ -39,18 +40,13 @@ const Navbar = () => {
 
         <div className={Classes.nav_menu}>
           <ul>
-            <li>
-              <Link to="/home">Home</Link>
-            </li>
-            <li>
-              <Link to="/:menu">Menu</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
+            {navLinks.map((navlink) => {
+              return (
+                <li key={navlink.label}>
+                  <Link to={navlink.href}>{navlink.label}</Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
 
