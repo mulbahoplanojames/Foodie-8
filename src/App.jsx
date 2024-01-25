@@ -53,7 +53,7 @@ const App = () => {
           <Route path="/coffee" element={<Coffee category={"Coffee"} />} />
           <Route path="/fruits" element={<Fruits category={"Fruits"} />} />
         </Routes>
-        <Footer />  
+        {/* <Footer />   */}
       </BrowserRouter>
     </>
   );
