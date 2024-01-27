@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import CardOne from "../ContactInfo_Cards/CardOne";
+import CardTwo from "../ContactInfo_Cards/CardTwo";
+import CardThree from "../ContactInfo_Cards/CardThree";
 
 const InfoWripper = styled.div({
   display: "flex",
@@ -10,26 +13,13 @@ const InfoWripper = styled.div({
   padding: "3rem 1.3rem",
 });
 
-const InfoContent = styled.div({
-  width: "300px",
-  padding: "3rem 1.1rem",
-  background: "red",
-  borderRadius: "10px",
-  boxShadow: "3px 2px 15px 2px lightgray",
-});
-
-const Title = styled.h1({
-  fontSize: "2rem",
-  paddingBottom: "1.1rem",
-});
-
 const ContactInfo = () => {
   return (
     <>
       <InfoWripper>
-        <InfoContent>
-          <Title>Contact Us</Title>
-        </InfoContent>
+        <CardOne></CardOne>
+        <CardTwo></CardTwo>
+        <CardThree></CardThree>
       </InfoWripper>
     </>
   );
