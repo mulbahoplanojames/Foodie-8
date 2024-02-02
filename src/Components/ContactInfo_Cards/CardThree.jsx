@@ -6,7 +6,7 @@ const CardThreeContent = styled.div`
   padding: 3.5rem 1.1rem;
   border-radius: 5px;
   cursor: pointer;
-  transition: ".5s ease-in";
+  transition: ".6s ease-in";
 
   &:hover {
     box-shadow: 3px 2px 15px 5px lightgray;

@@ -8,7 +8,7 @@ const CardOneContent = styled.div`
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
-  transition: ".5s ease-in";
+  transition: "0.6s ease-in";
 
   &:hover {
     box-shadow: 3px 2px 15px 5px lightgray;
