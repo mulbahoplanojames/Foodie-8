@@ -1,9 +1,7 @@
 .menu_card_wripper {
   width: 590px;
-  /* background: tan; */
   display: flex;
   gap: 33px;
-  flex-wrap: wrap;
 }
 
 .image_wripper {
@@ -104,5 +102,17 @@
 @keyframes fadeIn {
   0% {
     transform: scale(1.1);
+  }
+}
+
+/* !Responsive Design Media Qures  */
+
+@media screen and (max-width: 767px) {
+  .menu_card_wripper {
+    width: 98%;
+    align-items: center;
+  }
+  .image_wripper {
+    width: 50%;
   }
 }

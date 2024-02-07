@@ -11,20 +11,30 @@ const Menu = styled.div({
   padding: "5% 2%",
 });
 
-const Key = styled.p({
-  textAlign: "center",
-  fontSize: "1.3rem",
-  paddingBottom: "2%",
-  color: "#34b96f",
-});
+const Key = styled.p`
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 2%;
+  color: #34b96f;
 
-const Title = styled.h1({
-  fontSize: "3rem",
-  paddingBottom: "5%",
-  textAlign: "center",
-  lineHeight: "3.5rem",
-  color: "#222222",
-});
+  @media screen and (max-width: 767px) {
+    padding-bottom: 1.5rem;
+  }
+`;
+
+const Title = styled.h1`
+  font-size: 3rem;
+  padding-bottom: 5%;
+  text-align: center;
+  line-height: 3.5rem;
+  color: #222222;
+
+  @media screen and (max-width: 767px) {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    padding-bottom: 2.6rem;
+  }
+`;
 
 const AllProductsWripper = styled.div({
   display: "flex",
@@ -34,6 +44,12 @@ const AllProductsWripper = styled.div({
   flexWrap: "wrap",
 });
 
+const Br = styled.br`
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+`;
+
 const Menus = () => {
   const { all_product } = useContext(ShopContext);
 
@@ -42,7 +58,7 @@ const Menus = () => {
       <Menu>
         <Key>Menu</Key>
         <Title>
-          Choose your favoriate food <br /> & order now !
+          Choose your favoriate food <Br /> & order now !
         </Title>
 
         <ProductLinks />

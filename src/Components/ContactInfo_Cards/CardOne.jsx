@@ -4,11 +4,11 @@ import styled from "styled-components";
 const CardOneContent = styled.div`
   width: 350px;
   padding: 3.5rem 1.1rem;
-  //   background: red;
+  // background: #88bcb9;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
-  transition: "0.6s ease-in";
+  transition: 0.5s ease-in-out;
 
   &:hover {
     box-shadow: 3px 2px 15px 5px lightgray;

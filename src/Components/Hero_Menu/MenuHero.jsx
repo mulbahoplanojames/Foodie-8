@@ -18,13 +18,17 @@ const MenuWripper = styled.div`
   padding: 13% 3%;
 `;
 
-const Title = styled.h1({
-  fontSize: "4rem",
-  fontWeight: "550",
-  textTransform: "captilize",
-  wordSpacing: "7px",
-  color: "#fff",
-});
+const Title = styled.h1`
+  font-size: 4rem;
+  font-weight: 550;
+  text-transform: captilize;
+  word-spacing: 7px;
+  color: #fff;
+
+  @media screen and (max-width: 767px) {
+    font-size: 2.3rem;
+  }
+`;
 
 const MenuHero = () => {
   return (

@@ -92,7 +92,7 @@
   }
 }
 
-/* Nav one for the Navbackground color  */
+/* !Nav one for the Navbackground color  */
 
 .nav1 {
   display: flex;
@@ -107,7 +107,6 @@
   height: 75px;
   background: #34b970;
   transition: 0.1s ease-in-out;
-  
 
   .logo {
     color: #fff;
@@ -119,5 +118,25 @@
 
   .icon {
     color: #fff;
+  }
+}
+
+/* !Responsive Design Media Qures  */
+
+@media screen and (max-width: 767px) {
+  .nav_menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 85vh;
+    /* background: #34b970; */
+    text-align: center;
+    padding: 2rem 1.4rem 2rem 1.4rem;
+  }
+  .nav_menu ul li {
+    display: none;
+    padding: 1.4rem 0px;
+    font-size: 1.5rem;
   }
 }

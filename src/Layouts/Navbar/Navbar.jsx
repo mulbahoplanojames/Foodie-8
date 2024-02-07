@@ -7,10 +7,10 @@ import { ShopContext } from "../../Context/ShopContext";
 import navLinks from "../../Components/Constants/Constant";
 
 const Navbar = () => {
-  // Updating the card item
+  // !Updating the card item
   const { getTotalCartItem } = useContext(ShopContext);
 
-  // Navbar Color CHange
+  //!Navbar Color CHange
   const [navColor, setNavColor] = useState(false);
 
   useEffect(() => {
